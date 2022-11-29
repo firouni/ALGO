@@ -41,3 +41,5 @@ BEGIN
     END_FOR
     write("nombre de voyelles est", vlist)
 END
+--
+--
