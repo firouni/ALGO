@@ -4,6 +4,7 @@ VAR
     tab2: ARRAY_OF INTEGER[5];
     i,j: INTEGER;
     sum:=0
+    sum1:=0
 BEGIN
     tab1=[1,2,3,4,5]
     tab2=[2,4,6,8,9]
@@ -17,8 +18,8 @@ BEGIN
        IF (tab1[i]=tab2[j]) {
          sum:=tab1[i]+tab2[j]
        }
-       ELSE IF (tab1[i]=! tab2[j]) {
-        sum:=tab1[i]+tab2[j]
+       ELSE IF (tab1[i] !== tab2[j]) {
+        sum1:=tab1[i]+tab2[j]
        }
        END_IF
         
@@ -27,5 +28,5 @@ BEGIN
     END_FOR
         
     END_FOR
-    write("la somme des élements est", sum)
+    write("la somme des élements est", sum1)
 END
